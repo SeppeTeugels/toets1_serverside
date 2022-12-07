@@ -1,9 +1,6 @@
 package be.thomasmore.bookserver.controllers;
 
-import be.thomasmore.bookserver.model.dto.AuthorDTO;
-import be.thomasmore.bookserver.model.dto.AwardDTO;
-import be.thomasmore.bookserver.model.dto.BookDTO;
-import be.thomasmore.bookserver.model.dto.BookDetailedDTO;
+import be.thomasmore.bookserver.model.dto.*;
 import be.thomasmore.bookserver.services.AwardService;
 import be.thomasmore.bookserver.services.BookService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,6 +28,13 @@ public class AwardController {
     public Iterable<AwardDTO> findAll(@RequestParam(required = false) String TitleKeyWord,@RequestParam(required = false) String InfoKeyWord) {
         log.info("##### findAll awards - titleKeyWord=" + TitleKeyWord + "InfoKeyWord=" + InfoKeyWord);
         return awardService.findAll(TitleKeyWord,InfoKeyWord);
+    }
+
+    @Operation(summary = "get all details from 1 award from the database.",
+            description = " get <b> 1 </b> author ")
+    @GetMapping("{id}")
+    public AwardDetailedDTO findOne(@PathVariable int id) {
+        return awardService.findOne(id);
     }
 
 }
