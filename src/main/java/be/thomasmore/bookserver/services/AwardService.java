@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 @Service
 public class AwardService {
 
@@ -22,8 +23,13 @@ public class AwardService {
     @Autowired
     private AwardDTOConverter awardDTOConverter;
 
-    public List<AwardDTO> findAll() {
-        final List<Award> award = awardRepository.findAll();
+    public List<AwardDTO> findAll(String titleKeyWord, String infoKeyWord) {
+        final List<Award> award = titleKeyWord != null ?
+                awardRepository.findByTitleContainingIgnoreCase(titleKeyWord) :
+                infoKeyWord != null ?
+                        awardRepository.findByInfoContainingIgnoreCase(infoKeyWord)
+                        : awardRepository.findAll();
+
 
         return award.stream()
                 .map(a -> awardDTOConverter.convertToDto(a))

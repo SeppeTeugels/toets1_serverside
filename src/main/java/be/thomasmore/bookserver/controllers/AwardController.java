@@ -26,8 +26,8 @@ public class AwardController {
     @Operation(summary = "list of awards in the database.",
             description = "get all awards")
     @GetMapping("")
-    public Iterable<AwardDTO> findAll() {
-        return awardService.findAll();
+    public Iterable<AwardDTO> findAll(@RequestParam(required = false) String TitleKeyWord,@RequestParam(required = false) String InfoKeyWord) {
+        return awardService.findAll(TitleKeyWord,InfoKeyWord);
     }
 
 }
