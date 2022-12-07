@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 public class AwardDTO {
     private int id;
     private String title;
-    private String info;
-    private String country;
+  /*  private String info;
+    private String country;*/
 }
