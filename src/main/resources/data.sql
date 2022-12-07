@@ -36,5 +36,8 @@ INSERT INTO BOOKSUSER (USERNAME, PASSWORD, ROLE)
 VALUES ('vera', '$2y$12$KF3spKP4kgf59.6zYkmjyeYaW2.4ZxV16Grpw1FPsFnzYq68kswJ6', 'USER'); -- vera
 
 INSERT INTO AWARD (title,info,country) values ('tesing title', 'testinginfo', 'Belgium');
+INSERT INTO AWARD (title,info,country) values ('The Paris Literary Prize', 'The Paris Literary Prize was a biennial literary prize for unpublished novellas by new authors from anywhere in the world.', 'France');
+INSERT INTO AWARD (title,info,country) values ('Ovid Prize', 'The Ovid Prize, established in 2002, is a literary prize awarded annually to an author from any country, in recognition of a body of work.', 'Romania');
+INSERT INTO AWARD (title,info,country) values ('Common Wealth Award of Distinguished Service', 'The Common Wealth Awards of Distinguished Service (or Common Wealth Awards) were created under the will of the late Ralph Hayes, an influential American business executive and philanthropist. ', 'United States');
 
 

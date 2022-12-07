@@ -25,7 +25,7 @@ public class AwardService {
 
     public List<AwardDTO> findAll(String titleKeyWord, String infoKeyWord) {
         final List<Award> award = titleKeyWord != null ?
-                awardRepository.findByTitleContainingIgnoreCase(titleKeyWord) :
+                awardRepository.findByTitleContainingIgnoreCase(titleKeyWord):
                 infoKeyWord != null ?
                         awardRepository.findByInfoContainingIgnoreCase(infoKeyWord)
                         : awardRepository.findAll();
