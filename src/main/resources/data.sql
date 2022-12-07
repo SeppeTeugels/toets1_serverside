@@ -35,4 +35,6 @@ VALUES ('marie', '$2a$10$9TeBFudS7HsgCa4sSvP//O627sMq.KiTFrOr8IzrVlYw5c8aoKzNm',
 INSERT INTO BOOKSUSER (USERNAME, PASSWORD, ROLE)
 VALUES ('vera', '$2y$12$KF3spKP4kgf59.6zYkmjyeYaW2.4ZxV16Grpw1FPsFnzYq68kswJ6', 'USER'); -- vera
 
+INSERT INTO AWARD (title,info,country) values ('tesing title', 'testinginfo', 'Belgium');
+
 

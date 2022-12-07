@@ -16,7 +16,16 @@ create table booksuser
 );
 create table genre
 (
-    id   integer      not null AUTO_INCREMENT,
-    name varchar(255) not null,
+    id      integer      not null AUTO_INCREMENT,
+    name    varchar(255) not null,
+    primary key (id)
+);
+
+create table award
+(
+    id      integer      not null AUTO_INCREMENT,
+    title   varchar(255) not null,
+    info    varchar(400),
+    country varchar(255),
     primary key (id)
 );
