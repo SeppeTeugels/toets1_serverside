@@ -8,6 +8,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -34,5 +35,8 @@ public class Book {
 
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Author> authors;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    private List<Award> awards;
 }
 

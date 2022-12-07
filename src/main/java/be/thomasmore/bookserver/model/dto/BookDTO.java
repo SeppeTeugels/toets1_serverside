@@ -12,5 +12,6 @@ public class BookDTO {
     private int id;
     private String title;
     private Collection<AuthorDTO> authors;
+    private Collection<AwardDTO> awards;
 }
 

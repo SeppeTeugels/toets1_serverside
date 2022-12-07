@@ -40,4 +40,9 @@ INSERT INTO AWARD (title,info,country) values ('The Paris Literary Prize', 'The 
 INSERT INTO AWARD (title,info,country) values ('Ovid Prize', 'The Ovid Prize, established in 2002, is a literary prize awarded annually to an author from any country, in recognition of a body of work.', 'Romania');
 INSERT INTO AWARD (title,info,country) values ('Common Wealth Award of Distinguished Service', 'The Common Wealth Awards of Distinguished Service (or Common Wealth Awards) were created under the will of the late Ralph Hayes, an influential American business executive and philanthropist. ', 'United States');
 
+insert into BOOK_AWARDS (BOOKS_ID, AWARDS_ID) values (1, 1);
+insert into BOOK_AWARDS (BOOKS_ID, AWARDS_ID) values (1, 2);
+insert into BOOK_AWARDS (BOOKS_ID, AWARDS_ID) values (2, 3);
+insert into BOOK_AWARDS (BOOKS_ID, AWARDS_ID) values (3, 4);
+
 
