@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "8f716bb2-bdc9-4ad4-9004-7eedf558170d",
+		"name": "toets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23787513"
+	},
+	"item": [
+		{
+			"name": "All awards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/awards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"awards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All awards with info param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/awards?InfoKeyWord=info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"awards"
+					],
+					"query": [
+						{
+							"key": "InfoKeyWord",
+							"value": "info"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All awards with title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/awards?TitleKeyWord=prize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"awards"
+					],
+					"query": [
+						{
+							"key": "TitleKeyWord",
+							"value": "prize"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get details from award",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/awards/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"awards",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book with awards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
